@@ -23,8 +23,11 @@ documentation to find out how to set the timeout value on a datagram socket.
 Specifically, your client program should
 (1) send the ping message using UDP (Note: Unlike TCP, you do not need to establish a connection
 first, since UDP is a connectionless protocol.)
+
 (2) print the response message from server, if any
+
 (3) calculate and print the round trip time (RTT), in seconds, of each packet, if server responses
+
 (4) otherwise, print “Request timed out”
 
 During development, you should run the UDPPingerServer.py on your machine, and test your
@@ -36,6 +39,8 @@ MESSAGE FORMAT
 
 The ping messages in this lab are formatted in a simple way. The client message is one line,
 consisting of ASCII characters in the following format:
+
               Ping sequence_number time
+
 where sequence_number starts at 1 and progresses to 10 for each successive ping message sent by the
 client, and time is the time when the client sends the message.
