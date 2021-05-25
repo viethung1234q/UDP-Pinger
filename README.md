@@ -20,7 +20,8 @@ for a reply; if no reply is received within one second, your client program shou
 packet was lost during transmission across the network. You will need to look up the Python
 documentation to find out how to set the timeout value on a datagram socket.
 
-Specifically, your client program should
+Specifically, your client program should:
+
 (1) send the ping message using UDP (Note: Unlike TCP, you do not need to establish a connection
 first, since UDP is a connectionless protocol.)
 
