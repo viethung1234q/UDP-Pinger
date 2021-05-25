@@ -1,8 +1,8 @@
 # UDP-Pinger
 
-Đoàn Việt Hưng - hungdoan2712@gmail.com
+# Đoàn Việt Hưng - hungdoan2712@gmail.com
 
-PACKET LOSS
+# PACKET LOSS
 
 UDP provides applications with an unreliable transport service. Messages may get lost in the network
 due to router queue overflows, faulty hardware or some other reasons. Because packet loss is rare or
@@ -10,7 +10,7 @@ even non-existent in typical campus networks, the server in this lab injects art
 the effects of network packet loss. The server creates a variable randomized integer which determines
 whether a particular incoming packet is lost or not.
 
-CLIENT CODE
+# CLIENT CODE
 
 You need to implement the following client program.
 The client should send 10 pings to the server. Because UDP is an unreliable protocol, a packet sent
@@ -36,7 +36,7 @@ client by sending packets to localhost (or, 127.0.0.1). After you have fully deb
 should see how your application communicates across the network with the ping server and ping
 client running on different machines.
 
-MESSAGE FORMAT
+# MESSAGE FORMAT
 
 The ping messages in this lab are formatted in a simple way. The client message is one line,
 consisting of ASCII characters in the following format:
